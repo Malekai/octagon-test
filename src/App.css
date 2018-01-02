@@ -1,0 +1,279 @@
+* {
+  font-family: 'roboto';
+}
+
+.main-footer {
+  display: flex;
+  min-width: 100%;
+  padding: 1em;
+  min-height: 50px;
+}
+
+.main-head, .heading, nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-head {
+  position: fixed;
+  min-width: 100%;
+  min-height: 50px;
+  background-color: rgb(0, 0, 0);
+  grid-area: header;
+  border-radius: 0px
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+#header-logo {
+  width: 100px;
+}
+
+.link {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+}
+
+.link + .link {
+  margin-left: 20px;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero .video-list {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  padding: 2em;
+}
+
+.hero-panel-video {
+  width: 100%;
+  min-height: 700px;
+}
+
+.about {
+  background-color:rgba(0, 0, 0, 0.2);
+  background-image: url('./images/about_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  grid-area: about;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  padding: 5em;
+}
+
+.about p {
+  width: 100%;
+}
+
+.about_image {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.main-footer {
+  grid-area: footer;
+  color: white;
+  background-color: black;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "hero"
+    "about"
+    "footer";
+  grid-auto-rows: minmax(50px, auto);
+  align-content: center;
+}
+
+figure {
+  border: 1px solid rgb(190, 190, 190);
+  text-align: center;
+  background: white;
+}
+
+figure > img {
+  width: 100%;
+}
+
+figcaption {
+  padding: 1em;
+}
+
+figure:hover {
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+h1 {
+  color: rgb(68, 180, 255);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+small {
+  margin-left: 10px;
+}
+
+#footer-logo {
+  width: 8%;
+}
+
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+
+@media (max-width: 800px) {
+  .about {
+    background-color:rgba(0, 0, 0, 0.2);
+    background-image: url('./images/about_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-area: about;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-column-gap: 10px;
+    padding: 5em;
+  }
+
+  .hero .video-list {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+  }
+  
+  .hero-panel-video {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-panel-video {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+/* Contact Section */
+
+.form-grid{
+  display: grid;
+  grid-area: form-grid;
+  grid-template-columns: auto;
+  min-height: 1000px;
+  align-content: center;
+  justify-content: center;
+  background-image: url('./images/contact_bg.jpg');
+  background-size: cover;
+}
+
+.full-width {
+  grid-column: 2 / 3;   
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "form-grid"
+    "footer";
+  grid-auto-rows: minmax(auto, auto);
+  align-content: center;
+}
+
+.form {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.form h3 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  padding: 2em;
+}
+
+@media (min-width: 800px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+form label {
+  color: white;
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  color: white;
+  background: rgb(255, 187, 0);
+  width: 100%;
+  border: 0;
+}
+
+button:hover, button:focus {
+  background: rgb(255, 102, 0);
+  outline: 0;
+}
+
+textarea, .topic {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.response {
+  text-align: center;
+  color: white;
+}
+
+select {
+  border-radius: 0px;
+  height: 35px;
+}
+
+.input-error {
+  width: 10px;
+  color: red;
+  margin-top: 5px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "octagon-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "foreman": "^2.0.0",
+    "marked": "^0.3.9",
+    "mongoose": "^5.0.0-rc0",
+    "nodemon": "^1.14.7",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-responsive-navbar": "^1.0.11",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "next"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-dev": "nf start -p 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,6 +1,5 @@
 # INSTALLATION
 
-* install react (https://facebook.github.io/react-native/docs/getting-started.html)
 * git clone https://github.com/Malekai/octagon-test.git
 
 * `yarn install or npm install` to install dependencies
